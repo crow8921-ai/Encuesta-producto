@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Mercado - Donas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fa;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            color: #d81b60;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .pregunta {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eef2f3;
+        }
+        .pregunta p {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .opcion {
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+        .opcion input {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .opcion label {
+            cursor: pointer;
+        }
+        button {
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #b0154b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Encuesta de Preferencias: Donas</h1>
+    <form id="formEncuesta">
+        
+        <div class="pregunta">
+            <p>1. ¿Qué tamaño de donas es de su preferencia?</p>
+            <div class="opcion"><input type="radio" id="p1_1" name="p1" value="Pequeña" required><label for="p1_1">Pequeña</label></div>
+            <div class="opcion"><input type="radio" id="p1_2" name="p1" value="Mediana"><label for="p1_2">Mediana</label></div>
+            <div class="opcion"><input type="radio" id="p1_3" name="p1" value="Grande"><label for="p1_3">Grande</label></div>
+        </div>
+
+        <div class="pregunta">
+            <p>2. ¿De qué manera prefiere comprarlos?</p>
+            <div class="opcion"><input type="radio" id="p2_1" name="p2" value="A domicilio" required><label for="p2_1">A domicilio</label></div>
+            <div class="opcion"><input type="radio" id="p2_2" name="p2" value="Presencial"><label for="p2_2">Presencial</label></div>
+            <div class="opcion"><input type="radio" id="p2_3" name="p2" value="Vendedor ambulante"><label for="p2_3">Vendedor ambulante</label></div>
+        </div>
+
+        <div class="pregunta">
+            <p>3. ¿Cuál cree que es la textura ideal?</p>
+            <div class="opcion"><input type="radio" id="p3_1" name="p3" value="Esponjoso y suave" required><label for="p3_1">Esponjoso y suave</label></div>
+            <div class="opcion"><input type="radio" id="p3_2" name="p3" value="Crujiente por fuera"><label for="p3_2">Crujiente por fuera</label></div>
+            <div class="opcion"><input type="radio" id="p3_3" name="p3" value="Tipo cake"><label for="p3_3">Tipo cake</label></div>
+        </div>
+
+        <div class="pregunta">
+            <p>4. ¿De qué le gustaría que fuera el empaque?</p>
+            <div class="opcion"><input type="radio" id="p4_1" name="p4" value="Cajita de cartón" required><label for="p4_1">Cajita de cartón</label></div>
+            <div class="opcion"><input type="radio" id="p4_2" name="p4" value="Hoja de plástico"><label_for="p4_2">Hoja de plástico</label></div>
+            <div class="opcion"><input type="radio" id="p4_3" name="p4" value="Bolsa de papel"><label for="p4_3">Bolsa de papel</label></div>
+        </div>
+
+        <div class="pregunta">
+            <p>5. ¿Qué tipo de glaseado le gustaría en las donas?</p>
+            <div class="opcion"><input type="radio" id="p5_1" name="p5" value="Vainilla" required><label for="p5_1">Vainilla</label></div>
+            <div class="opcion"><input type="radio" id="p5_2" name="p5" value="Chocolate"><label for="p5_2">Chocolate</label></div>
+            <div class="opcion"><input type="radio" id="p5_3" name="p5" value="Fresa"><label for="p5_3">Fresa</label></div>
+        </div>
+
+        <div class="pregunta">
+            <p>6. ¿De qué sabor prefiere el pan de la dona?</p>
+            <div class="opcion"><input type="radio" id="p6_1" name="p6" value="Chocolate" required><label for="p6_1">Chocolate</label></div>
+            <div class="opcion"><input type="radio" id="p6_2" name="p6" value="Clásico"><label for="p6_2">Clásico</label></div>
+            <div class="opcion"><input type="radio" id="p6_3" name="p6" value="Vainilla"><label for="p6_3">Vainilla</label></div>
+        </div>
+
+        <div class="pregunta">
+            <p>7. ¿Qué topping le gustaría en las donas?</p>
+            <div class="opcion"><input type="radio" id="p7_1" name="p7" value="Solo cubierta" required><label for="p7_1">Solo cubierta</label></div>
+            <div class="opcion"><input type="radio" id="p7_2" name="p7" value="Chispas"><label for="p7_2">Chispas</label></div>
+            <div class="opcion"><input type="radio" id="p7_3" name="p7" value="Cereal"><label for="p7_3">Cereal</label></div>
+        </div>
+
+        <div class="pregunta">
+            <p>8. ¿Qué cantidad le gustaría por paquete?</p>
+            <div class="opcion"><input type="radio" id="p8_1" name="p8" value="Paquete de 2" required><label for="p8_1">Paquetes de 2</label></div>
+            <div class="opcion"><input type="radio" id="p8_2" name="p8" value="Paquete de 3"><label for="p8_2">Paquetes de 3</label></div>
+            <div class="opcion"><input type="radio" id="p8_3" name="p8" value="Paquete de 4"><label for="p8_3">Paquetes de 4</label></div>
+        </div>
+
+        <div class="pregunta">
+            <p>9. ¿Qué aspecto valora más al elegir una dona?</p>
+            <div class="opcion"><input type="radio" id="p9_1" name="p9" value="Sabor y frescura" required><label for="p9_1">Sabor y frescura</label></div>
+            <div class="opcion"><input type="radio" id="p9_2" name="p9" value="Variedad de sabores"><label for="p9_2">Variedad de sabores</label></div>
+            <div class="opcion"><input type="radio" id="p9_3" name="p9" value="Presentación"><label for="p9_3">Presentación</label></div>
+        </div>
+
+        <div class="pregunta">
+            <p>10. ¿Qué precio pagaría por una dona?</p>
+            <div class="opcion"><input type="radio" id="p10_1" name="p10" value="6 chica" required><label for="p10_1">$6 chica</label></div>
+            <div class="opcion"><input type="radio" id="p10_2" name="p10" value="10 mediana"><label for="p10_2">$10 mediana</label></div>
+            <div class="opcion"><input type="radio" id="p10_3" name="p10" value="14 grande"><label for="p10_3">$14 grande</label></div>
+        </div>
+
+        <button type="submit">Enviar Respuestas</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('formEncuesta').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        let resultado = "¡Gracias por responder!\n\nResumen de tus respuestas:\n";
+        
+        for (let [key, value] of formData.entries()) {
+            resultado += `- ${key}: ${value}\n`;
+        }
+        
+        alert(resultado);
+        console.log(Object.fromEntries(formData)); // Para ver el objeto en la consola de desarrollo
+    });
+</script>
+
+</body>
+</html>
